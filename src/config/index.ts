@@ -1,3 +1,5 @@
-import { configDotenv } from "../../node_modules/dotenv/lib/main";
+import dotenv from 'dotenv';
+import path from 'path';
 
-configDotenv
+// Load environment variables from .env file
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
